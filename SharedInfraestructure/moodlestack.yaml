@@ -180,10 +180,10 @@ Resources:
               command: "git clone git://git.moodle.org/moodle.git"
             02_get_branch:
               cwd: "/var/www/html/moodle"
-              command: "sudo git branch --track MOODLE_34_STABLE origin/MOODLE_34_STABLE"
+              command: "sudo git branch --track MOODLE_38_STABLE origin/MOODLE_38_STABLE"
             03_checkout_branch:
               cwd: "/var/www/html/moodle"
-              command: "sudo git checkout MOODLE_34_STABLE"
+              command: "sudo git checkout MOODLE_38_STABLE"
             04_copy_config:
               cwd: "/var/www/html/moodle"
               test: "test ! -e /var/www/html/moodle/config.php"
